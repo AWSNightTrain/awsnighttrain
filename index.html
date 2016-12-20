@@ -10,7 +10,20 @@
       font-family: Arial, sans-serif;
       font-size: 16px;
     }
-    
+    .bg {
+		background: url(./images/background.png) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	.new-bg {
+		background: url(./images/background2.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
     h1 {
       font-size: 500%;
       font-weight: normal;
@@ -34,15 +47,19 @@
 	{
 		hiddenDiv = document.getElementById('hiddendiv');
 		hiddenDiv.setAttribute('class', 'visible');
+		document.body.setAttribute('class', 'new-bg');
+		showDiv = document.getElementById('allabordtext');
+		showDiv.setAttribute('class', 'hidden');
 	}
   </script>
 </head>
-<body>
+<body class="bg" >
     <div align="center">
 	<div>
 		<a id="logo" href="/">
     		<img src="./images/logo-white.png" />
-		</a><span id="versionId">v0.01</span>
+		</a>
+		<span id="versionId">v0.01</span>
 	</div>
     <h1>Congratulations!</h1>
     <h2>Successfully deployed this website using AWS code services.</h2>
@@ -51,7 +68,7 @@
 	
 	<div>
 	<h2>
-		<div><a href="javascript:showMe();">Show Me</a></div>
+		<div id="allabordtext"><a href="javascript:showMe();"><h2>All aboard!</h2></a></div>
 		<div id="hiddendiv" class="hidden"><h1>Best Idea Ever!</h1></div>
 	</h2>
 	</div>

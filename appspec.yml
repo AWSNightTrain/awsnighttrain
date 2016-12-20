@@ -5,6 +5,10 @@ files:
     destination: /var/www/html/
   - source: /images/logo-white.png
     destination: /var/www/html/images/
+  - source: /images/background.png
+    destination: /var/www/html/images/
+  - source: /images/background2.jpg
+    destination: /var/www/html/images/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies

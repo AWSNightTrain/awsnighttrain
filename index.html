@@ -1,6 +1,62 @@
+<!DOCTYPE html>
 <html>
-
-<h2>I work</h2>
-
-
+<head>
+  <meta charset="utf-8">
+  <title>Sample Deployment</title>
+  <style>
+    body {
+      color: #ffffff;
+      background-color: #000000;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+    
+    h1 {
+      font-size: 500%;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+    
+    h2 {
+      font-size: 200%;
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+	.hidden {
+        display: none;
+    {
+    .visible {
+        display: block;
+    }
+  </style>
+  <script>
+	function showMe()
+	{
+		hiddenDiv = document.getElementById('hiddendiv');
+		hiddenDiv.setAttribute('class', 'visible');
+	}
+  </script>
+</head>
+<body>
+    <div align="center">
+	<div>
+		<a id="logo" href="/">
+    		<img src="./images/logo-white.png" />
+		</a><span id="versionId">v0.01</span>
+	</div>
+    <h1>Congratulations!</h1>
+    <h2>Successfully deployed this website using AWS code services.</h2>
+    <br/>
+	<br/>
+	
+	<div>
+	<h2>
+		<div><a href="javascript:showMe();">Show Me</a></div>
+		<div id="hiddendiv" class="hidden"><h1>Best Idea Ever!</h1></div>
+	</h2>
+	</div>
+  </div>
+  </div>
+</body>
 </html>
+
